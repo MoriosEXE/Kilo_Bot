@@ -14,8 +14,8 @@ def data_read(name,type_data = True):
             for bot in brut_line:
                 if "ID" in bot:
                     id_bot = bot.split("=")[1].split(" ")[1]
-                    pos_x = bot.split("=")[2].split(" ")[1]
-                    pos_y = bot.split("=")[3].split(" ")[1]
+                    pos_x = float ((bot.split("=")[2].split(" ")[1]))
+                    pos_y = float ((bot.split("=")[3].split(" ")[1]))
                     step_dt.append([id_bot, pos_x, pos_y])
             data_by_time.append(step_dt)
     if type_data:
