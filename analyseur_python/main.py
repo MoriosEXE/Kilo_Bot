@@ -64,7 +64,6 @@ def refresh_bot(self):
 
         i += 1
 
-
 # TOOLS
 tools = tk.LabelFrame(fen, text="tools")
 tools.pack(side="right")
