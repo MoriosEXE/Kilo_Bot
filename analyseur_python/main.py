@@ -1,7 +1,8 @@
 import tkinter as tk
 import fonction as fc
+import math
 
-data = fc.data_read("test2")
+data = fc.data_read("test_1")
 length = 1000
 width = 1000
 
@@ -50,19 +51,55 @@ def grid_management():
             canvas.create_line(i * 10, 0, i * 10, width, fill="black", width=1, tags="grid")
 
 
-def refresh_bot(self):
-    print(adjustable_zoom.get())
-    canvas.delete(f"bot")
-    i = 0
-    for step in data:
-        for bot in step:
+def kilobot_draw(posx,posy,next_x = 999,next_y = 999):
 
-            canvas.create_oval(((bot[1] * adjustable_zoom.get()) + width // 2),
+    up_left = (posx - 5,posy - 5)
+    down_rigth = (posx + 5,posy + 5)
+
+
+    canvas.create_oval(up_left[0],up_left[1],down_rigth[0],down_rigth[1], tags=f"bot")
+
+    if next_y != 999 and next_x != 999:
+
+        dx = next_x - posx
+        dy = next_y - posy
+        orientation = math.degrees(math.atan2(dy, dx))
+        print(orientation)
+
+
+def refresh_bot(self):
+
+    canvas.delete(f"bot")
+
+    for i in range(len(data)):
+
+        step = data[i]
+        if i != len(data) -1 :
+            next_step = data[i+1]
+        for j in range(len(step)):
+
+            if i != len(data) -1 :
+
+                next_bot = next_step[i]
+                coor_next_bot = (
+                (next_bot[1] * adjustable_zoom.get()) + width // 2, (next_bot[2] * adjustable_zoom.get()) + length // 2)
+            else :
+                coor_next_bot = (999,999)
+
+            bot = step[j]
+            coor_bot = ((bot[1]* adjustable_zoom.get()) + width // 2 ,(bot[2] * adjustable_zoom.get()) + length // 2)
+
+
+            kilobot_draw(coor_bot[0],coor_bot[1],coor_next_bot[0],coor_next_bot[1])
+
+
+
+"""            canvas.create_oval(((bot[1] * adjustable_zoom.get()) + width // 2),
                                (bot[2] * adjustable_zoom.get()) + length // 2,
                                (bot[1] * adjustable_zoom.get()) + width // 2,
-                               (bot[2] * adjustable_zoom.get()) + length // 2, tags=f"bot")
+                               (bot[2] * adjustable_zoom.get()) + length // 2, tags=f"bot")"""
 
-        i += 1
+
 
 # TOOLS
 tools = tk.LabelFrame(fen, text="tools")
