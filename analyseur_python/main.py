@@ -2,7 +2,7 @@ import tkinter as tk
 import fonction as fc
 import math
 
-data = fc.data_read("test_1")
+data = fc.data_read("test2")
 length = 1000
 width = 1000
 
