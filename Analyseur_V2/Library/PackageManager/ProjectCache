@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638138585872432858
+      ticks: 638139770697207194
     m_Hash: 1010242877
   m_LockFileStatus:
     m_FilePath: D:/Kilo_Bot/Analyseur_V2/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638138586094182564
+      ticks: 638139770697207194
     m_Hash: 1035663092
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -105,6 +105,7 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -118,6 +119,7 @@ m_ResolvedPackages:
     - 2.0.0-preview.21
     - 2.0.0-preview.22
     - 2.0.0
+    - 2.0.1
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -723,6 +725,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.3
     - 3.2.0-pre.4
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.2.0-pre.1
@@ -3169,10 +3172,12 @@ m_ResolvedPackages:
     - 1.6.0
     - 1.7.0
     - 1.7.1
+    - 1.8.1
     compatible:
     - 1.6.0
     - 1.7.0
     - 1.7.1
+    - 1.8.1
     verified: 1.6.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
