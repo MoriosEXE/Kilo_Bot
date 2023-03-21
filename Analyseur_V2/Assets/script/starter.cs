@@ -60,7 +60,8 @@ public class starter : MonoBehaviour
 
                 Vector3 position = new Vector3((float)bot[1] * 10, 0, (float)bot[2] * 10); // Position d'instanciation
                 Quaternion rotation = Quaternion.Euler(0f,(float) bot[3], 0f); // Créer une rotation à partir de l'angle Y
-                GameObject temp_bot = Instantiate(kilo_bot, position, rotation); // Instancier l'objet avec la position et la rotation
+                GameObject temp_bot = Instantiate(kilo_bot , position, rotation); // Instancier l'objet avec la position et la rotation
+                //temp_bot.GetComponent<GameObject>().id = bot[0];
                 dict_bot.Add((int)bot[0], temp_bot);
 
             }
@@ -147,7 +148,7 @@ public class starter : MonoBehaviour
             else if (Regex.IsMatch(group, @"^\d+-\d+$"))
             {
                 // Add range of numbers
-                Match match = Regex.Match(group, @"(\d+)-(\d+)");
+                Match match = Regex.Match(group, @"(\d+)-(\d+)"); 
                 int start = int.Parse(match.Groups[1].Value);
                 int end = int.Parse(match.Groups[2].Value);
                 for (int i = start; i <= end; i++)
