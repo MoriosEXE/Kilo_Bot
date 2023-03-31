@@ -4163,7 +4163,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -4690,7 +4690,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -7593,7 +7593,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -8120,7 +8120,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -10458,7 +10458,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>36</materialuniqueid>
+                            <materialuniqueid>23</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
@@ -10859,7 +10859,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>38</materialuniqueid>
+                            <materialuniqueid>24</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
@@ -11023,7 +11023,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -11386,7 +11386,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>40</materialuniqueid>
+                            <materialuniqueid>25</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
@@ -11550,7 +11550,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                 </flashing>
             </objectColor>
             <ik>
-                <maxStepSize>9.999998</maxStepSize>
+                <maxStepSize>9.999997</maxStepSize>
                 <weight>1.000000</weight>
             </ik>
             <dependency>
@@ -11913,7 +11913,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>42</materialuniqueid>
+                            <materialuniqueid>26</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
@@ -12880,7 +12880,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>44</materialuniqueid>
+                            <materialuniqueid>27</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
@@ -13153,7 +13153,7 @@ The Kilobot (the real robot!) is available for purchase. Please visit www.k-team
                             <secmangulararaxisfrictionmodel>6</secmangulararaxisfrictionmodel>
                             <normalmangulararaxisfrictionmodel>6</normalmangulararaxisfrictionmodel>
                             <autosleepsteplivethreshold>10</autosleepsteplivethreshold>
-                            <materialuniqueid>46</materialuniqueid>
+                            <materialuniqueid>28</materialuniqueid>
                             <pureshapesasconvex>false</pureshapesasconvex>
                             <convexshapesasrandom>false</convexshapesasrandom>
                             <randomshapesasterrain>false</randomshapesasterrain>
