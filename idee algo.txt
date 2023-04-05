@@ -1,0 +1,7 @@
+donner du poid a une opinion par rapport aux nombres de rencontre 
+- comment compter ?
+
+donner du poid a une opinion par rapport a la distance parcouru 
+
+faire un système de vote continue ou on stock l'opnion des ID des bot dans une liste avec les opinions 
+

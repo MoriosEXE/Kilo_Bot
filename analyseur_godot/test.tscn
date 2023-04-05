@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwj4chtkae7jl"]
+
+[ext_resource type="PackedScene" uid="uid://bmv7qubo5pa8u" path="res://kilobot.tscn" id="1_th8at"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="kilobot_godot" parent="." instance=ExtResource("1_th8at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155292, 0, 1.41213)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965908, 0.258886, 0, -0.258886, 0.965908, 0, 1.34342, 2)
