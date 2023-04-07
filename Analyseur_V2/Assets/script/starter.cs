@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,19 +22,25 @@ public class starter : MonoBehaviour
     private List<int> step_list = new List<int>();
     private List<int> id_list = new List<int>();
 
+    public UnityEngine.UI.Slider monSlider;
+    public Text step_text;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+      
     }
 
-
+    public void refresh_slider()
+    {
+        step_text.text = monSlider.value.ToString();
+    }
 
     public void read_step(string s)
     {
@@ -61,7 +68,11 @@ public class starter : MonoBehaviour
                 Vector3 position = new Vector3((float)bot[1] * 10, 0, (float)bot[2] * 10); // Position d'instanciation
                 Quaternion rotation = Quaternion.Euler(0f,(float) bot[3], 0f); // Créer une rotation à partir de l'angle Y
                 GameObject temp_bot = Instantiate(kilo_bot , position, rotation); // Instancier l'objet avec la position et la rotation
-                //temp_bot.GetComponent<GameObject>().id = bot[0];
+
+                temp_bot.GetComponent<kilo_bot>().id = (int) bot[0];
+                temp_bot.GetComponent<kilo_bot>().opinion = (int)bot[4];
+                temp_bot.GetComponent<kilo_bot>().puissance = (int)bot[5];
+
                 dict_bot.Add((int)bot[0], temp_bot);
 
             }
@@ -69,6 +80,7 @@ public class starter : MonoBehaviour
             instance_kilobot.Add(dict_bot);
             
         }
+        monSlider.maxValue = data.Count;
     } 
 
     public void Open_File()
@@ -114,7 +126,8 @@ public class starter : MonoBehaviour
                             float posY = float.Parse(bot.Split("=")[3].Split(" ")[1], CultureInfo.InvariantCulture.NumberFormat);
                             float angle = float.Parse(bot.Split("=")[4].Split(" ")[1], CultureInfo.InvariantCulture.NumberFormat);
                             int opinion = int.Parse( bot.Split("=")[5].Split(" ")[1]);
-                            stepDt.Add(new List<object> { idBot, posX, posY ,angle,opinion});
+                            int puissance = int.Parse(bot.Split("=")[6].Split(" ")[1]);
+                            stepDt.Add(new List<object> { idBot, posX, posY ,angle,opinion,puissance});
                         }
                     }
 
