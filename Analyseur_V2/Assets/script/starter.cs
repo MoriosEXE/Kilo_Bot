@@ -40,6 +40,7 @@ public class starter : MonoBehaviour
     public void refresh_slider()
     {
         step_text.text = monSlider.value.ToString();
+
     }
 
     public void read_step(string s)
@@ -58,22 +59,25 @@ public class starter : MonoBehaviour
 
     public void generate_log()
     {
+        GameObject temp_bot = new GameObject();
         foreach(var step in data)
         {
 
             dict_bot.Clear();
             foreach (var bot in step)
             {
-
+                temp_bot = null;
                 Vector3 position = new Vector3((float)bot[1] * 10, 0, (float)bot[2] * 10); // Position d'instanciation
                 Quaternion rotation = Quaternion.Euler(0f,(float) bot[3], 0f); // Créer une rotation à partir de l'angle Y
-                GameObject temp_bot = Instantiate(kilo_bot , position, rotation); // Instancier l'objet avec la position et la rotation
+                temp_bot = Instantiate(kilo_bot , position, rotation); // Instancier l'objet avec la position et la rotation
 
                 temp_bot.GetComponent<kilo_bot>().id = (int) bot[0];
-                temp_bot.GetComponent<kilo_bot>().opinion = (int)bot[4];
+                temp_bot.GetComponent<kilo_bot>().Opinion = (int)bot[4];
                 temp_bot.GetComponent<kilo_bot>().puissance = (int)bot[5];
+                temp_bot.GetComponent<kilo_bot>().Is_visible = true;
 
                 dict_bot.Add((int)bot[0], temp_bot);
+
 
             }
             
