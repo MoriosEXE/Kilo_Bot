@@ -34,7 +34,7 @@ def data_read(name,type_data = True):
         return data_by_robot
 
 
-nom = "test_nbRencontre_list_03"
+nom = "test_nbRencontre_list_T2_18"
 data = data_read("test")
 
 analyse = [["step", "opinion_1", "somme_1", "opinion_2", "somme_2","puissance_1","puissance_2","etat"]]
